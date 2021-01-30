@@ -1,0 +1,71 @@
+/* Primary colors */
+$color-primary-01: #006fae;
+$color-primary-02: #4d9ac6;
+$color-primary-03: #40aab5;
+$color-primary-04: #62b9c2;
+$color-primary-01-hover: #005c9d;
+
+/* Other */
+$color-red: #D20A28;
+$color-red-dark: #8C2332;
+$color-grey-dark: #5A5A5A;
+$color-grey: #969696;
+$color-black: #000000;
+$color-white: #FFFFFF;
+$card-shadow: 0 8px 16px 0 rgba(44, 51, 73, 0.1);
+
+/* font color */
+$color-base-font: #5A5A5A;
+$disabled-button: rgba(0, 0, 0, 0.25);
+
+/* breakpoint */
+$mobile-width-xs: 350px;
+$mobile-width-s: 398px;
+$mobile-width: 426px;
+$tablet-portrait-width: 768px;
+$tablet-width: 1024px;
+$desktop-width: 1440px;
+
+/* mixins */
+@mixin mobile-xs {
+  @media (min-width: #{$mobile-width-xs}) {
+    @content;
+  }
+}
+
+@mixin mobile-s {
+  @media (min-width: #{$mobile-width-s}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (min-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+@mixin mobile-landscape {
+  @media (min-width: #{$mobile-width}) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin tablet-portrait {
+  @media (min-width: #{$tablet-portrait-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
