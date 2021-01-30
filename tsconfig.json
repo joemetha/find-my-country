@@ -18,7 +18,8 @@
     ],
     "paths": {
       "@app/*": ["src/app/*"],
-      "@src/*": ["src/*"]
+      "@src/*": ["src/*"],
+      "@country/*": ["src/app/country/*"]
     }
   },
   "angularCompilerOptions": {

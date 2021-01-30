@@ -3,6 +3,9 @@
   <mat-card-content>
     <div class="country-page">
       <fmc-search-input placeholder="Search by country.." ></fmc-search-input>
+      <pre>
+        {{ (countries$ | async) | json }}
+      </pre>
     </div>
   </mat-card-content>
 </mat-card>

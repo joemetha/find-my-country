@@ -9,6 +9,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { EffectsModule } from '@ngrx/effects';
 import { ROOT_REDUCERS, metaReducers, fromLoading } from './store';
 import { environment } from '@src/environments/environment';
+import { HttpClientModule } from '@angular/common/http';
 
 // component
 import { AppComponent } from './app.component';
@@ -21,6 +22,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     SharedModule,
     StoreModule.forRoot(ROOT_REDUCERS, {
       metaReducers,
