@@ -1,0 +1,47 @@
+@import '../../../scss/variable';
+
+.full-width-layout {
+  &__header {
+    position: fixed;
+    width: 100%;
+    background: $color-white;
+    padding: 20px 0;
+    box-shadow: $card-shadow;
+    z-index: 999;
+  }
+
+  &__main-content {
+    background-color: $color-grey-light;
+    padding-top: 72px;
+    min-height: calc(100vh - 72px);
+
+    & > div.container {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  }
+
+  &__header-logo {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+
+    .mat-icon {
+      color: $color-primary-01;
+    }
+  }
+
+  &__header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      opacity: 0.6;
+    }
+  }
+
+  &__header-link {
+    display: flex;
+  }
+}
