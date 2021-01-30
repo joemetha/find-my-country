@@ -6,9 +6,13 @@ import { MaterialFrameworkModule } from '@app/shared/material-framework/material
 
 // component
 import { FindMyCountryPageComponent } from './pages/find-my-country-page/find-my-country-page.component';
+import { SearchInputComponent } from './components/search-input/search-input.component';
 
 @NgModule({
-  declarations: [FindMyCountryPageComponent],
+  declarations: [
+    FindMyCountryPageComponent,
+    SearchInputComponent
+  ],
   imports: [
     CommonModule,
     CountryRoutingModule,
