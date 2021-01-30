@@ -4,11 +4,13 @@ import { MaterialFrameworkModule } from './material-framework/material-framework
 import { RouterModule } from '@angular/router';
 
 // component
-import { FullWidthLayoutComponent } from './full-width-layout/full-width-layout.component';
+import { FullWidthLayoutComponent } from './layouts/full-width-layout/full-width-layout.component';
+import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
 
 @NgModule({
   declarations: [
-    FullWidthLayoutComponent
+    FullWidthLayoutComponent,
+    NotFoundPageComponent
   ],
   imports: [
     CommonModule,
@@ -17,7 +19,8 @@ import { FullWidthLayoutComponent } from './full-width-layout/full-width-layout.
   ],
   exports: [
     MaterialFrameworkModule,
-    FullWidthLayoutComponent
+    FullWidthLayoutComponent,
+    NotFoundPageComponent
   ]
 })
 export class SharedModule { }
