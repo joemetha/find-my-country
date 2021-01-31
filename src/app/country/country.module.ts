@@ -18,10 +18,15 @@ import { SearchInputComponent } from './components/search-input/search-input.com
 // service
 import { CountryService } from './services/country.service';
 
+// resolver
+import { CountryResolver } from './resolvers/country.resolver';
+import { TableComponent } from './components/table/table.component';
+
 @NgModule({
   declarations: [
     FindMyCountryPageComponent,
-    SearchInputComponent
+    SearchInputComponent,
+    TableComponent
   ],
   imports: [
     CommonModule,
@@ -34,7 +39,8 @@ import { CountryService } from './services/country.service';
     ]),
   ],
   providers: [
-    CountryService
+    CountryService,
+    CountryResolver
   ]
 })
 export class CountryModule { }

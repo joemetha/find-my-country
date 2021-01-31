@@ -5,16 +5,5 @@
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-
-  @include tablet-portrait {
-    max-width: 920px;
-  }
-
-  @include tablet {
-    max-width: 960px;
-  }
-
-  @include desktop {
-    max-width: 1192px;
-  }
+  max-width: 1192px;
 }

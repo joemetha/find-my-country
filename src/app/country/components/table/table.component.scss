@@ -1,0 +1,50 @@
+@import '../../../../scss/variable';
+
+.country-table {
+  margin-left: -16px;
+  margin-right: -16px;
+  overflow-x: auto;
+
+  .mat-table {
+    min-width: 738px;
+  }
+
+  th,
+  td {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .mat-column-flag {
+    width: 32px;
+
+    img {
+      height: 24px;
+      width: auto;
+      vertical-align: middle;
+    }
+  }
+
+  .mat-column-name {
+    width: 210px;
+
+    @include tablet-portrait {
+      width: 280px;
+    }
+
+    @include tablet {
+      width: 378px;
+    }
+  }
+
+  .mat-header-cell {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  tr td:not(:last-child),
+  tr th:not(:last-child) {
+    padding-right: 24px;
+  }
+}

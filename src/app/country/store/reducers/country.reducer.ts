@@ -1,6 +1,6 @@
 import { Country } from '@app/country/models/country.class';
 import { Action, createReducer, on } from '@ngrx/store';
-import { CountryActions } from '../actions';
+import { CountryActions } from '@country/store/actions';
 
 export const countryFeatureKey = 'country';
 

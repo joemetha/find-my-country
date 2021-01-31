@@ -1,4 +1,4 @@
-import { Country } from '@app/country/models/country.class';
+import { Country } from '@country/models/country.class';
 import { createAction, props } from '@ngrx/store';
 
 export const loadCountriesData = createAction(

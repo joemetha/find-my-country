@@ -1,3 +1,35 @@
+@import './variable';
+
 mat-card.mat-card:not([class*=mat-elevation-z]) {
   box-shadow: $card-shadow;
+}
+
+.mat-table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.mat-cell,
+.mat-footer-cell,
+.mat-table,
+.mat-header-cell {
+  color: $color-base-font;
+}
+
+mat-paginator {
+  .mat-paginator-container {
+    justify-content: center;
+
+    @include tablet-portrait {
+      justify-content: flex-end;
+    }
+  }
+
+  .mat-paginator-page-size {
+    display: none;
+
+    @include tablet-portrait {
+      display: flex;
+    }
+  }
 }

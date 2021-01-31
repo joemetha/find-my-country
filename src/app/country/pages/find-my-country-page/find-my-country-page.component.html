@@ -2,10 +2,16 @@
 <mat-card>
   <mat-card-content>
     <div class="country-page">
-      <fmc-search-input placeholder="Search by country.." ></fmc-search-input>
-      <pre>
-        {{ (countries$ | async) | json }}
-      </pre>
+      <fmc-search-input
+        placeholder="Search by country.."
+        (searchUpdated)="updateTable($event)"
+      >
+      </fmc-search-input>
+      <fmc-table
+        [serachByCountry]="serachByCountry"
+        [dataList]="countries$ | async"
+      >
+      </fmc-table>
     </div>
   </mat-card-content>
 </mat-card>

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'fmc-search-input',
@@ -7,10 +7,10 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class SearchInputComponent implements OnInit {
   @Input() placeholder: string;
+  @Output() searchUpdated = new EventEmitter();
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }

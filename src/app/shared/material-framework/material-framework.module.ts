@@ -5,6 +5,8 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
+import { MatSortModule } from '@angular/material/sort';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   imports: [
@@ -13,7 +15,9 @@ import { MatInputModule } from '@angular/material/input';
     MatProgressBarModule,
     MatCardModule,
     MatIconModule,
-    MatInputModule
+    MatInputModule,
+    MatSortModule,
+    MatTableModule
   ],
   exports: [
     MatButtonModule,
@@ -21,7 +25,9 @@ import { MatInputModule } from '@angular/material/input';
     MatProgressBarModule,
     MatCardModule,
     MatIconModule,
-    MatInputModule
+    MatInputModule,
+    MatSortModule,
+    MatTableModule
   ],
   providers: [],
 })
