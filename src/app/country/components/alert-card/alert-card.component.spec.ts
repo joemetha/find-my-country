@@ -1,4 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { MaterialFrameworkModule } from '@app/shared/material-framework/material-framework.module';
+import { EffectsModule } from '@ngrx/effects';
+import { StoreModule } from '@ngrx/store';
 
 import { AlertCardComponent } from './alert-card.component';
 
@@ -8,7 +11,12 @@ describe('AlertCardComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AlertCardComponent ]
+      declarations: [ AlertCardComponent ],
+      imports: [
+        MaterialFrameworkModule,
+        StoreModule.forRoot({}),
+        EffectsModule.forRoot([])
+      ]
     })
     .compileComponents();
   });
