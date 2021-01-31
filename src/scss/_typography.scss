@@ -5,11 +5,10 @@ a {
   text-decoration: none;
 }
 
-// a {
-//   color: $color-primary-01;
-//   font-weight: 700;
+a.link {
+  color: $color-primary-01;
 
-//   &:hover {
-//     color: $color-primary-01-hover;
-//   }
-// }
+  &:hover {
+    color: $color-primary-01-hover;
+  }
+}

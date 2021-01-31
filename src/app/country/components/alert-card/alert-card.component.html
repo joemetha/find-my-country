@@ -1,0 +1,6 @@
+<div class="alert-card" *ngIf="showAlert">
+  <mat-card>
+    <div>Something went wrong, please try again later</div>
+    <div *ngIf="errorMessage">{{ errorMessage }}</div>
+  </mat-card>
+</div>

@@ -14,6 +14,7 @@ import { CountryEffects } from './store/effects/country.effects';
 // component
 import { FindMyCountryPageComponent } from './pages/find-my-country-page/find-my-country-page.component';
 import { SearchInputComponent } from './components/search-input/search-input.component';
+import { AlertCardComponent } from './components/alert-card/alert-card.component';
 
 // service
 import { CountryService } from './services/country.service';
@@ -26,7 +27,8 @@ import { TableComponent } from './components/table/table.component';
   declarations: [
     FindMyCountryPageComponent,
     SearchInputComponent,
-    TableComponent
+    TableComponent,
+    AlertCardComponent
   ],
   imports: [
     CommonModule,

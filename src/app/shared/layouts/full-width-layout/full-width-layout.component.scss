@@ -13,7 +13,7 @@
   &__main-content {
     background-color: $color-grey-light;
     padding-top: 72px;
-    min-height: calc(100vh - 72px);
+    min-height: calc(100vh - 136px);
 
     & > div.container {
       padding-top: 40px;
@@ -43,5 +43,16 @@
 
   &__header-link {
     display: flex;
+  }
+
+  &__footer {
+    padding: 20px 0;
+    font-size: 12px;
+    box-shadow: $card-shadow;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }

@@ -1,0 +1,9 @@
+@import '../../../../scss/variable';
+
+.alert-card mat-card {
+  background-color: $color-red-transparent;
+  color: $color-red;
+  border: 1px solid $color-red;
+  box-shadow: none;
+  margin-bottom: 14px;
+}
