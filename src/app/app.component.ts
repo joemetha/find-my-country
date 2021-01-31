@@ -23,6 +23,7 @@ export class AppComponent implements OnInit, AfterViewChecked {
     this.cdRef.detectChanges();
   }
 
+  // observe loading status of the application -> for show/hide the progress bar
   observeStates(): void {
     this.isLoading$ = this.rootStore.select(fromStore.LoadingSelectors.getIsLoading);
   }
